@@ -19,8 +19,19 @@
 (function(window) {
   'use strict';
 
-  // Configuration
-  const API_BASE_URL = 'http://localhost:5000';
+  // Configuration - Environment detection
+  const API_BASE_URL = (function() {
+    const hostname = window.location.hostname;
+
+    // Local development
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return 'http://localhost:5000';
+    }
+
+    // Production (GitHub Pages or deployed site)
+    // Railway API URL
+    return 'https://web-production-9b63e.up.railway.app';
+  })();
 
   /**
    * Load recommendations and inject them into the page
