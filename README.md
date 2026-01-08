@@ -211,8 +211,10 @@ npm run preview  # Preview production build
 - **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)** - Solutions for common errors
 - **[PRODUCTION-INTEGRATION.md](./PRODUCTION-INTEGRATION.md)** - ⚠️ **Important!** CORS, SSL, and deployment concerns
 - **[PRODUCTION-CONCERNS-SUMMARY.md](./PRODUCTION-CONCERNS-SUMMARY.md)** - Quick summary of production issues
-- **[RAILWAY-DEPLOYMENT.md](./RAILWAY-DEPLOYMENT.md)** - 🚀 Complete guide to deploy on Railway.app
-- **[RAILWAY-QUICKSTART.md](./RAILWAY-QUICKSTART.md)** - 10-minute Railway deployment guide
+- **[RAILWAY-DEPLOYMENT.md](./RAILWAY-DEPLOYMENT.md)** - 🚀 Deploy API to Railway.app
+- **[RAILWAY-QUICKSTART.md](./RAILWAY-QUICKSTART.md)** - 10-minute Railway API deployment
+- **[GITHUB-PAGES-DEPLOYMENT.md](./GITHUB-PAGES-DEPLOYMENT.md)** - 🆓 Deploy frontend to GitHub Pages (FREE)
+- **[DEPLOYMENT-COMPARISON.md](./DEPLOYMENT-COMPARISON.md)** - Compare deployment options & costs
 
 ## Technology Stack
 
