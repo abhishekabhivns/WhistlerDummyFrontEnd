@@ -1,0 +1,72 @@
+import React, { useEffect } from 'react';
+
+const ScandinaveSpaPage = () => {
+  const pageUrl = 'https://www.whistler.com/wellness/scandinave-spa/';
+
+  useEffect(() => {
+    if (window.loadRecommendations) {
+      window.loadRecommendations({
+        pageUrl: pageUrl,
+        containerId: 'recommendations-container',
+        numTiles: 3
+      });
+    }
+  }, []);
+
+  return (
+    <div className="main-content">
+      <div className="page-header">
+        <h1>Scandinave Spa Whistler</h1>
+        <p>Relax and rejuvenate in a stunning natural setting</p>
+      </div>
+
+      <div className="content content-wide">
+        <h2>The Art of Relaxation</h2>
+        <p>
+          Nestled in the forest just minutes from Whistler Village, Scandinave Spa Whistler offers
+          a tranquil escape inspired by the ancient Scandinavian tradition of hot and cold bathing.
+          This award-winning spa provides the perfect setting to unwind after an active day on the
+          mountain.
+        </p>
+        <h3>The Hydrotherapy Circuit</h3>
+        <p>
+          Experience the therapeutic benefits of the hot-cold-relax cycle. Begin in one of the hot
+          baths or steam rooms to warm your body and open your pores. Next, invigorate yourself
+          with a cold plunge or shower to stimulate circulation. Finally, rest in a relaxation area
+          to allow your body to normalize. Repeat the cycle 2-3 times for maximum benefit.
+        </p>
+        <h3>Facilities</h3>
+        <p>
+          The spa features multiple hot baths ranging from 39°C to 40°C, including eucalyptus steam
+          baths and a Finnish sauna. Cold pools and Nordic waterfall showers provide the contrast
+          needed for effective hydrotherapy. Peaceful relaxation areas scattered throughout the
+          grounds offer comfortable lounges and hammocks surrounded by towering evergreens.
+        </p>
+        <h3>Massage Treatments</h3>
+        <p>
+          Enhance your spa experience with a professional massage. Choose from Swedish, deep
+          tissue, or hot stone massages performed by certified therapists. Treatments can be booked
+          in addition to your spa entrance.
+        </p>
+        <h3>Visitor Information</h3>
+        <ul style={{ marginLeft: '2rem', lineHeight: '2' }}>
+          <li>Reservations required - book in advance especially during peak season</li>
+          <li>Adults only (19+) facility</li>
+          <li>Silence is observed throughout the spa</li>
+          <li>Bathing suits required</li>
+          <li>Towels and robes provided</li>
+          <li>Allow 2-3 hours for your visit</li>
+        </ul>
+      </div>
+
+      <div className="recommendations-section">
+        <h2>More Wellness Experiences</h2>
+        <div className="content content-wide">
+          <div id="recommendations-container"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ScandinaveSpaPage;

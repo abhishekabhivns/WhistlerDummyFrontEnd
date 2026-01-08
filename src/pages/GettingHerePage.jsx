@@ -1,0 +1,69 @@
+import React, { useEffect } from 'react';
+
+const GettingHerePage = () => {
+  const pageUrl = 'https://www.whistler.com/getting-here/';
+
+  useEffect(() => {
+    if (window.loadRecommendations) {
+      window.loadRecommendations({
+        pageUrl: pageUrl,
+        containerId: 'recommendations-container',
+        numTiles: 3
+      });
+    }
+  }, []);
+
+  return (
+    <div className="main-content">
+      <div className="page-header">
+        <h1>Getting Here</h1>
+        <p>Plan your journey to Whistler</p>
+      </div>
+
+      <div className="content content-wide">
+        <h2>Your Journey Begins</h2>
+        <p>
+          Whistler is located approximately 120 kilometres (75 miles) north of Vancouver along the
+          spectacular Sea-to-Sky Highway. The scenic drive takes about 2 hours and offers stunning
+          views of mountains, ocean, and coastal rainforest.
+        </p>
+        <h3>By Car</h3>
+        <p>
+          Driving to Whistler is a popular option and allows you to explore the Sea-to-Sky
+          corridor at your own pace. The route is well-maintained year-round, though winter
+          conditions may require snow tires or chains. Multiple viewpoints and attractions along
+          the way make the journey part of the adventure.
+        </p>
+        <h3>By Bus or Shuttle</h3>
+        <p>
+          Several shuttle services operate daily between Vancouver and Whistler, with pickups from
+          major hotels and Vancouver International Airport. This is a convenient, affordable option
+          that eliminates parking concerns and allows you to relax and enjoy the scenery.
+        </p>
+        <h3>By Air</h3>
+        <p>
+          Fly into Vancouver International Airport (YVR), then take a shuttle, rental car, or
+          private transfer to Whistler. Helicopter transfers are also available for those seeking a
+          faster, more scenic arrival. The nearest regional airport is Pemberton Airport, located
+          30 minutes north of Whistler.
+        </p>
+        <h3>Travel Tips</h3>
+        <ul style={{ marginLeft: '2rem', lineHeight: '2' }}>
+          <li>Book shuttle services in advance during peak seasons</li>
+          <li>Check road conditions before traveling in winter</li>
+          <li>Stop at Shannon Falls or Sea-to-Sky Gondola along the way</li>
+          <li>Consider staying overnight in Vancouver before or after your trip</li>
+        </ul>
+      </div>
+
+      <div className="recommendations-section">
+        <h2>Start Planning</h2>
+        <div className="content content-wide">
+          <div id="recommendations-container"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default GettingHerePage;
