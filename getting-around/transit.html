@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Transit - Whistler Test Pages</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/dmgo-recommendations.js"></script>
+  <script src="../assets/js/navigation.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navigation"></nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h1>Public Transit</h1>
+      <p>Free and convenient transit throughout Whistler</p>
+    </div>
+
+    <div class="content content-wide">
+      <h2>Getting Around is Easy</h2>
+      <p>
+        Whistler's public transit system is completely FREE and provides convenient access to all
+        major areas of the resort. With regular service throughout the day and evening, you can
+        easily get around without a car.
+      </p>
+      <h3>Route Information</h3>
+      <p>
+        Multiple bus routes serve Whistler Village, the Upper Village, Creekside, and
+        surrounding neighborhoods. During peak winter season, service runs frequently from early
+        morning until late evening. In summer, schedules are adjusted for typical vacation
+        patterns.
+      </p>
+      <h3>How to Use the System</h3>
+      <p>
+        Simply board at any marked bus stop throughout Whistler. No tickets or passes required -
+        all transit is free! Buses are equipped with bike racks in summer and ski racks in
+        winter. Real-time arrival information is available at major stops and through mobile
+        apps.
+      </p>
+      <h3>Key Routes</h3>
+      <ul style="margin-left: 2rem; line-height: 2;">
+        <li><strong>Route 1:</strong> Village to Upper Village via Blackcomb Way</li>
+        <li><strong>Route 2:</strong> Village to Function Junction</li>
+        <li><strong>Route 3:</strong> Village to Emerald Estates</li>
+        <li><strong>Route 5:</strong> Village to Creekside</li>
+        <li><strong>Route 7:</strong> Village to Nordic Estates</li>
+      </ul>
+    </div>
+
+    <div class="recommendations-section">
+      <h2>Plan Your Visit</h2>
+      <div class="content content-wide">
+        <div id="recommendations-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      initNavigation('transit');
+
+      loadRecommendations({
+        pageUrl: 'https://www.whistler.com/getting-around/transit/',
+        containerId: 'recommendations-container',
+        numTiles: 3
+      });
+    });
+  </script>
+</body>
+</html>

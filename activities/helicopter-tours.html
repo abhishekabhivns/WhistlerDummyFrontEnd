@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helicopter Tours - Whistler Test Pages</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/dmgo-recommendations.js"></script>
+  <script src="../assets/js/navigation.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navigation"></nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h1>Helicopter Tours</h1>
+      <p>Experience Whistler from above with breathtaking helicopter tours</p>
+    </div>
+
+    <div class="content content-wide">
+      <h2>Soar Above the Mountains</h2>
+      <p>
+        Take in the spectacular views of Whistler, Blackcomb, and the surrounding Coast Mountains
+        on an unforgettable helicopter tour. Whether you're looking for a scenic flight, glacier
+        landing, or adventure tour, there's a helicopter experience perfect for you.
+      </p>
+      <p>
+        Our helicopter tour operators offer a variety of experiences, from short 12-minute scenic
+        flights to extended tours that include glacier landings and alpine picnics. All tours are
+        led by experienced pilots who provide insightful commentary about the region's geography,
+        wildlife, and history.
+      </p>
+      <p>
+        Tours operate year-round, weather permitting. During winter months, you can witness
+        snow-capped peaks and pristine glaciers. Summer tours showcase vibrant alpine meadows and
+        stunning turquoise lakes. Each season offers its own unique perspective on this
+        magnificent landscape.
+      </p>
+    </div>
+
+    <div class="recommendations-section">
+      <h2>You May Also Like</h2>
+      <div class="content content-wide">
+        <div id="recommendations-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize navigation and load recommendations
+    window.addEventListener('DOMContentLoaded', function() {
+      initNavigation('helicopter');
+
+      loadRecommendations({
+        pageUrl: 'https://www.whistler.com/activities/helicopter-tours/',
+        containerId: 'recommendations-container',
+        numTiles: 3
+      });
+    });
+  </script>
+</body>
+</html>
