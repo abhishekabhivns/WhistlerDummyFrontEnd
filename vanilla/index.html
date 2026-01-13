@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whistler Test Pages - DMGo Recommendations</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/dmgo-recommendations.js"></script>
+  <script src="assets/js/navigation.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navigation"></nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="home-page">
+      <h1>Whistler Test Pages</h1>
+      <p>Testing DMGo-Whistler Recommendation Engine</p>
+      <p style="font-size: 1rem; color: #999;">
+        Click on any page below to see dynamic recommendations served from the API
+      </p>
+
+      <div class="test-pages-grid">
+        <a href="activities/helicopter-tours.html" class="test-page-card">
+          <h3>Helicopter Tours</h3>
+          <p>Activities</p>
+        </a>
+
+        <a href="activities/vallea-lumina.html" class="test-page-card">
+          <h3>Vallea Lumina</h3>
+          <p>Activities</p>
+        </a>
+
+        <a href="chat.html" class="test-page-card">
+          <h3>Chat</h3>
+          <p>Support</p>
+        </a>
+
+        <a href="getting-around/parking.html" class="test-page-card">
+          <h3>Parking</h3>
+          <p>Getting Around</p>
+        </a>
+
+        <a href="getting-around/transit.html" class="test-page-card">
+          <h3>Transit</h3>
+          <p>Getting Around</p>
+        </a>
+
+        <a href="getting-here.html" class="test-page-card">
+          <h3>Getting Here</h3>
+          <p>Planning</p>
+        </a>
+
+        <a href="family.html" class="test-page-card">
+          <h3>Family</h3>
+          <p>Activities</p>
+        </a>
+
+        <a href="hours-of-operation.html" class="test-page-card">
+          <h3>Hours of Operation</h3>
+          <p>Information</p>
+        </a>
+
+        <a href="skiing/lift-tickets-passes.html" class="test-page-card">
+          <h3>Lift Tickets & Passes</h3>
+          <p>Skiing</p>
+        </a>
+
+        <a href="wellness/scandinave-spa.html" class="test-page-card">
+          <h3>Scandinave Spa</h3>
+          <p>Wellness</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize navigation
+    window.addEventListener('DOMContentLoaded', function() {
+      initNavigation('home');
+    });
+  </script>
+</body>
+</html>
