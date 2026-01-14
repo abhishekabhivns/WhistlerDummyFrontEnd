@@ -244,6 +244,8 @@ body {
 .tile__link {
   margin-top: auto;
   padding: 0 20px 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .tile__link a {
