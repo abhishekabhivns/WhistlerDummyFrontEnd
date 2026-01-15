@@ -1,76 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Getting Here - Whistler Test Pages</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Getting to Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="assets/js/dmgo-recommendations.js"></script>
-  <script src="assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Getting Here</h1>
-      <p>Plan your journey to Whistler</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Your Journey Begins</h2>
-      <p>
-        Whistler is located approximately 120 kilometres (75 miles) north of Vancouver along the
-        spectacular Sea-to-Sky Highway. The scenic drive takes about 2 hours and offers stunning
-        views of mountains, ocean, and coastal rainforest.
-      </p>
-      <h3>By Car</h3>
-      <p>
-        Driving to Whistler is a popular option and allows you to explore the Sea-to-Sky
-        corridor at your own pace. The route is well-maintained year-round, though winter
-        conditions may require snow tires or chains. Multiple viewpoints and attractions along
-        the way make the journey part of the adventure.
-      </p>
-      <h3>By Bus or Shuttle</h3>
-      <p>
-        Several shuttle services operate daily between Vancouver and Whistler, with pickups from
-        major hotels and Vancouver International Airport. This is a convenient, affordable option
-        that eliminates parking concerns and allows you to relax and enjoy the scenery.
-      </p>
-      <h3>By Air</h3>
-      <p>
-        Fly into Vancouver International Airport (YVR), then take a shuttle, rental car, or
-        private transfer to Whistler. Helicopter transfers are also available for those seeking a
-        faster, more scenic arrival. The nearest regional airport is Pemberton Airport, located
-        30 minutes north of Whistler.
-      </p>
-      <h3>Travel Tips</h3>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li>Book shuttle services in advance during peak seasons</li>
-        <li>Check road conditions before traveling in winter</li>
-        <li>Stop at Shannon Falls or Sea-to-Sky Gondola along the way</li>
-        <li>Consider staying overnight in Vancouver before or after your trip</li>
-      </ul>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/transportation.jpg"
+             alt="The spectacular Sea-to-Sky Highway connects Vancouver to Whistler through stunning mountain scenery." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Getting to Whistler</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>120 km (75 miles) north of Vancouver on the scenic Sea-to-Sky Highway</li>
+                  <li>2-hour drive from downtown Vancouver or Vancouver International Airport</li>
+                  <li>Multiple transportation options including drive, shuttle, and private transfer</li>
+                  <li>Year-round access with spectacular scenery along the route</li>
+                </ul>
+              </p>
+
+              <h2>Your Journey to Whistler</h2>
+              <p>Getting to Whistler is part of the adventure. The Sea-to-Sky Highway (Highway 99) is considered one of the most scenic drives in the world, winding along the coast past Howe Sound before climbing into the mountains. Whether you choose to drive yourself or take advantage of convenient shuttle services, the journey sets the tone for an unforgettable mountain experience.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Transportation Options</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">By Car</h3>
+                        <ul>
+                          <li><b>Duration:</b> Approximately 2 hours from Vancouver</li>
+                          <li><b>Route:</b> Highway 99 (Sea-to-Sky Highway)</li>
+                          <li><b>Winter:</b> Snow tires or chains may be required</li>
+                          <li><b>Parking:</b> Multiple parkades and lots in Whistler Village</li>
+                          <li><b>Tip:</b> Leave early to avoid traffic and enjoy scenic stops</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">By Shuttle or Bus</h3>
+                        <ul>
+                          <li><b>Providers:</b> Multiple daily departures from YVR and Vancouver</li>
+                          <li><b>Cost:</b> $50-100 CAD per person one-way</li>
+                          <li><b>Bookings:</b> Advance reservations recommended</li>
+                          <li><b>Benefits:</b> No driving stress, no parking fees</li>
+                          <li><b>WiFi:</b> Many shuttles offer complimentary internet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>From Vancouver International Airport (YVR)</h2>
+              <p>Most visitors arrive via Vancouver International Airport, British Columbia's main air hub serving flights from around the world. From YVR, you have several options:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Rental Car:</b> All major rental companies operate at YVR with counters in the arrivals area</li>
+                <li><b>Shuttle Services:</b> Scheduled shuttles depart regularly from outside the terminal</li>
+                <li><b>Private Transfer:</b> Luxury vehicles and SUVs available for direct, personalized service</li>
+                <li><b>Helicopter:</b> For the ultimate arrival experience (30 minutes, weather dependent)</li>
+              </ul>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Recommended Stops Along the Way</h3>
+                <div class="show-hide__content">
+                  <p>Take advantage of amazing attractions along the Sea-to-Sky Highway:</p>
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Shannon Falls</h3>
+                        <ul>
+                          <li>BC's third highest waterfall</li>
+                          <li>335-meter (1,099 ft) cascade</li>
+                          <li>Short walk from parking</li>
+                          <li>Great photo opportunity</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Sea-to-Sky Gondola</h3>
+                        <ul>
+                          <li>10-minute ride to summit lodge</li>
+                          <li>Spectacular mountain views</li>
+                          <li>Hiking trails and suspension bridge</li>
+                          <li>Dining with panoramic vistas</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Britannia Mine Museum</h3>
+                        <ul>
+                          <li>Historic copper mine</li>
+                          <li>Interactive exhibits and tours</li>
+                          <li>Underground mine exploration</li>
+                          <li>National Historic Site</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Driving Tips and Road Conditions</h2>
+              <p>The Sea-to-Sky Highway is a winding mountain road that requires attentive driving, especially in winter conditions. Here are important tips for your journey:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Winter Driving:</b> BC law requires winter tires or chains from October 1 to March 31</li>
+                <li><b>Road Conditions:</b> Check DriveBC.ca for current conditions and webcams</li>
+                <li><b>Weather:</b> Mountain weather can change quickly; be prepared</li>
+                <li><b>Speed Limits:</b> Strictly enforced; drive according to conditions</li>
+                <li><b>Rest Stops:</b> Pull-outs available for photos and breaks</li>
+                <li><b>Wildlife:</b> Watch for animals, especially at dawn and dusk</li>
+                <li><b>Fuel:</b> Gas stations available in Squamish and Whistler</li>
+              </ul>
+
+              <h2>Alternative Airports</h2>
+              <p>While Vancouver International Airport (YVR) is the most common arrival point, other options include:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Seattle-Tacoma (SEA):</b> 4.5 hour drive; popular for US visitors</li>
+                <li><b>Abbotsford (YXX):</b> 2.5 hour drive; budget airline option</li>
+                <li><b>Pemberton Airport (YPS):</b> 30 minutes north; private and charter flights</li>
+              </ul>
+
+              <h2>Border Crossing Information</h2>
+              <p>US visitors should be aware that Whistler is in Canada. Ensure you have:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Valid passport or enhanced driver's license</li>
+                <li>Completed customs declaration if flying into Canada</li>
+                <li>Travel insurance (recommended)</li>
+                <li>Understanding of duty-free allowances</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('getting-here');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/getting-here/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/getting-here/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

@@ -1,74 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Activities - Whistler Test Pages</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family Activities in Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="assets/js/dmgo-recommendations.js"></script>
-  <script src="assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Family Activities</h1>
-      <p>Create lasting memories with your family in Whistler</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Fun for the Whole Family</h2>
-      <p>
-        Whistler is a world-class family destination offering activities and experiences for all
-        ages. From skiing and snowboarding lessons to summer adventures, bike parks, and cultural
-        experiences, there's something to delight every member of your family.
-      </p>
-      <h3>Winter Family Fun</h3>
-      <p>
-        The mountains offer dedicated family zones with magic carpets, gentle terrain, and
-        progression parks. Professional instructors specialize in teaching children of all ages
-        and abilities. Off the slopes, enjoy tubing, ice skating, sleigh rides, and snowshoeing
-        adventures designed for families.
-      </p>
-      <h3>Summer Adventures</h3>
-      <p>
-        Summer brings endless possibilities - from easy hiking trails and scenic gondola rides to
-        the thrilling Whistler Mountain Bike Park with dedicated family trails. Cool off at local
-        beaches and lakes, or explore the village's parks and playgrounds. The Tree Trek canopy
-        adventure offers age-appropriate challenges for young adventurers.
-      </p>
-      <h3>Year-Round Attractions</h3>
-      <p>
-        The Audain Art Museum offers family programs and workshops. Vallea Lumina provides an
-        enchanting evening experience suitable for all ages. The Squamish Lil'wat Cultural Centre
-        introduces families to Indigenous culture through interactive exhibits and storytelling.
-      </p>
-      <h3>Family-Friendly Dining</h3>
-      <p>
-        Whistler's restaurants welcome families with kids' menus, high chairs, and relaxed
-        atmospheres. Many offer early dining specials perfect for families with young children.
-      </p>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/family.jpg"
+             alt="Families enjoying outdoor activities together in Whistler's beautiful mountain setting." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Family Activities in Whistler</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>World-class family destination with activities for all ages</li>
+                  <li>Dedicated kids' zones and professional instructors</li>
+                  <li>Year-round adventures from skiing to biking to cultural experiences</li>
+                  <li>Family-friendly accommodations, dining, and entertainment</li>
+                </ul>
+              </p>
+
+              <h2>Why Families Love Whistler</h2>
+              <p>Whistler has earned its reputation as one of North America's premier family destinations. Whether your children are toddlers or teenagers, you'll find activities, lessons, and experiences tailored to their age and interests. The resort's commitment to family-friendly service means you can relax and enjoy quality time together while creating memories that will last a lifetime.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Winter Family Adventures</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Skiing & Snowboarding</h3>
+                        <ul>
+                          <li>Dedicated kids' learning areas with magic carpets</li>
+                          <li>Family zones with gentle terrain</li>
+                          <li>Professional instructors trained for children</li>
+                          <li>Equipment rentals in kids' sizes</li>
+                          <li>Ski school programs starting at age 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Snow Play</h3>
+                        <ul>
+                          <li>Tube park with multiple lanes</li>
+                          <li>Ice skating in Olympic Plaza</li>
+                          <li>Snowshoeing on family-friendly trails</li>
+                          <li>Sleigh rides through snowy forests</li>
+                          <li>Snow fort building and sledding</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Indoor Activities</h3>
+                        <ul>
+                          <li>Squamish Lil'wat Cultural Centre</li>
+                          <li>Swimming pools and hot tubs</li>
+                          <li>Family movie nights</li>
+                          <li>Kids' clubs and daycare options</li>
+                          <li>Audain Art Museum family programs</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Summer Family Fun</h2>
+              <p>When the snow melts, Whistler transforms into a summer playground. The mountains remain the backdrop, but activities shift to hiking, biking, water sports, and cultural experiences perfect for families.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Summer Activities</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Mountain Adventures</h3>
+                        <ul>
+                          <li><b>Hiking:</b> Easy trails with stunning views, suitable for all fitness levels</li>
+                          <li><b>Mountain Biking:</b> Family trails in the renowned bike park</li>
+                          <li><b>Gondola Rides:</b> Scenic journeys to alpine viewpoints</li>
+                          <li><b>Tree Trek:</b> Canopy adventure with courses for different ages</li>
+                          <li><b>Via Ferrata:</b> Guided climbing experience (ages 10+)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Water & Village Activities</h3>
+                        <ul>
+                          <li><b>Swimming:</b> Lakes and beaches perfect for families</li>
+                          <li><b>Paddling:</b> Kayak and paddleboard rentals</li>
+                          <li><b>Playground:</b> Multiple parks throughout the village</li>
+                          <li><b>Skateboard Park:</b> Supervised area for kids and teens</li>
+                          <li><b>Village Festivals:</b> Weekly events with entertainment</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Year-Round Experiences</h2>
+              <p>Some of Whistler's best family experiences are available no matter what season you visit:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Vallea Lumina:</b> Enchanting evening walk through illuminated forest (ages 5+)</li>
+                <li><b>Squamish Lil'wat Cultural Centre:</b> Interactive Indigenous cultural experiences</li>
+                <li><b>Audain Art Museum:</b> Family workshops and scavenger hunts</li>
+                <li><b>Whistler Village:</b> Car-free pedestrian area perfect for strolling</li>
+                <li><b>Bear Viewing:</b> Seasonal tours to see black bears in natural habitat (spring/summer)</li>
+                <li><b>Ziptrek Eco-Tours:</b> Zipline adventures with courses for ages 6 and up</li>
+              </ul>
+
+              <h2>Family-Friendly Services</h2>
+              <p>Whistler understands the unique needs of traveling families and offers comprehensive services to make your trip stress-free:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Services & Amenities</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Childcare</h3>
+                        <ul>
+                          <li>Licensed daycare facilities</li>
+                          <li>Kids' clubs (ages 3-12)</li>
+                          <li>Babysitting services</li>
+                          <li>Evening programs</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Dining</h3>
+                        <ul>
+                          <li>Kids' menus at most restaurants</li>
+                          <li>High chairs available</li>
+                          <li>Early dining specials</li>
+                          <li>Family-style restaurants</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Accommodations</h3>
+                        <ul>
+                          <li>Family suites with kitchens</li>
+                          <li>Condos with multiple bedrooms</li>
+                          <li>Cribs and rollaway beds</li>
+                          <li>Laundry facilities</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Planning Tips for Families</h2>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Book lessons in advance:</b> Ski and bike schools fill up during peak seasons</li>
+                <li><b>Consider accommodations with kitchens:</b> Save money and accommodate picky eaters</li>
+                <li><b>Take advantage of kids' programs:</b> Enjoy some adult time while kids have supervised fun</li>
+                <li><b>Pack layers:</b> Mountain weather changes quickly at any time of year</li>
+                <li><b>Plan rest days:</b> Balance active days with relaxed pool or village time</li>
+                <li><b>Ask about family discounts:</b> Many activities offer family packages or kids-free promotions</li>
+              </ul>
+
+              <h2>Seasonal Highlights</h2>
+              <p>Each season offers unique family experiences:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Winter:</b> Christmas in the Village, torchlight parades, New Year's Eve fireworks</li>
+                <li><b>Spring:</b> World Ski & Snowboard Festival, slush cup pond-skimming competition</li>
+                <li><b>Summer:</b> Canada Day celebrations, free outdoor concerts, farmers markets</li>
+                <li><b>Fall:</b> Whistler Village Beer Festival (adults), Thanksgiving festivities, autumn colors</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('family');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/family/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/family/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

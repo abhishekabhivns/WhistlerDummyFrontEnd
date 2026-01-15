@@ -1,65 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat with Us - Whistler Test Pages</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat with Us | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="assets/js/dmgo-recommendations.js"></script>
-  <script src="assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Chat with Us</h1>
-      <p>Get instant answers to your Whistler questions</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>We're Here to Help</h2>
-      <p>
-        Have questions about planning your Whistler vacation? Our team is here to help! Whether
-        you need information about accommodations, activities, dining, or getting around, we can
-        provide personalized recommendations to make your trip unforgettable.
-      </p>
-      <p>
-        Our chat service is available during regular business hours and connects you directly
-        with knowledgeable Whistler experts. We can help with:
-      </p>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li>Activity bookings and recommendations</li>
-        <li>Accommodation suggestions</li>
-        <li>Dining reservations</li>
-        <li>Transportation and parking information</li>
-        <li>Current weather and mountain conditions</li>
-        <li>Event information</li>
-      </ul>
-      <p>
-        For immediate assistance outside of chat hours, please visit our FAQ section or call our
-        visitor information line.
-      </p>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/whistler-village.jpg"
+             alt="Chat with our knowledgeable team to plan your perfect Whistler vacation." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Chat with Us</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Get instant answers from knowledgeable Whistler experts</li>
+                  <li>Available during business hours for real-time assistance</li>
+                  <li>Help with activities, accommodations, dining, and more</li>
+                  <li>Personalized recommendations for your trip</li>
+                </ul>
+              </p>
+
+              <h2>We're Here to Help</h2>
+              <p>Have questions about planning your Whistler vacation? Our team of local experts is here to assist you! Whether you need information about ski conditions, activity bookings, dining reservations, or getting around, we can provide personalized recommendations to make your trip unforgettable.</p>
+
+              <p>Our live chat service connects you directly with knowledgeable team members who can answer your questions in real-time. From first-time visitors to seasoned Whistler enthusiasts, we're here to help make your experience exceptional.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">What We Can Help With</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Trip Planning</h3>
+                        <ul>
+                          <li>Activity bookings and recommendations</li>
+                          <li>Accommodation suggestions</li>
+                          <li>Dining reservations and recommendations</li>
+                          <li>Transportation and parking information</li>
+                          <li>Itinerary planning assistance</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Real-Time Information</h3>
+                        <ul>
+                          <li>Current weather and mountain conditions</li>
+                          <li>Lift and trail status</li>
+                          <li>Event information and schedules</li>
+                          <li>Village updates and news</li>
+                          <li>Seasonal highlights and special offers</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Chat Hours</h2>
+              <p>Our live chat service is available during the following hours (Pacific Time):</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Monday - Friday:</b> 8:00 AM - 6:00 PM</li>
+                <li><b>Saturday - Sunday:</b> 9:00 AM - 5:00 PM</li>
+                <li><b>Holidays:</b> Limited hours (check for details)</li>
+              </ul>
+
+              <h2>Alternative Contact Options</h2>
+              <p>If you need assistance outside of chat hours, you can:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Call our visitor information line at 1-800-WHISTLER</li>
+                <li>Email us at info@whistler.com</li>
+                <li>Visit our comprehensive FAQ section</li>
+                <li>Stop by the Whistler Visitor Centre in the village</li>
+              </ul>
+
+              <p>We look forward to helping you plan an amazing Whistler experience!</p>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('chat');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/chat/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/chat/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

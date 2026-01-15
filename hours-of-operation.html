@@ -1,80 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hours of Operation - Whistler Test Pages</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hours of Operation | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="assets/js/dmgo-recommendations.js"></script>
-  <script src="assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Hours of Operation</h1>
-      <p>Plan your day with current operating hours</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Know Before You Go</h2>
-      <p>
-        Operating hours vary by season, weather conditions, and special events. We recommend
-        checking current hours before your visit as times can change. Below are typical operating
-        hours for major facilities and attractions.
-      </p>
-      <h3>Mountain Operations</h3>
-      <p>
-        <strong>Winter Season (November - April):</strong> Lifts typically operate from 8:00 AM
-        to 3:00 PM, with some high-elevation lifts closing earlier. Extended hours may be
-        available during peak periods and holidays.
-      </p>
-      <p>
-        <strong>Summer Season (May - October):</strong> Mountain activities and sightseeing
-        operate from 10:00 AM to 5:00 PM, with variations based on specific attractions and
-        weather.
-      </p>
-      <h3>Village Services</h3>
-      <p>
-        <strong>Shops:</strong> Most retail stores open at 10:00 AM and close between 6:00 PM
-        and 9:00 PM. Extended hours during peak season.
-      </p>
-      <p>
-        <strong>Restaurants:</strong> Breakfast service typically begins at 7:00 AM. Lunch and
-        dinner service varies by establishment, with many restaurants serving until 10:00 PM or
-        later.
-      </p>
-      <p>
-        <strong>Visitor Centre:</strong> Open daily from 9:00 AM to 5:00 PM. Extended hours
-        during winter season.
-      </p>
-      <h3>Recreation Facilities</h3>
-      <p>
-        Whistler's public facilities including the library, recreation centre, and public skating
-        rink maintain regular hours with seasonal variations. Contact individual facilities for
-        current schedules.
-      </p>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/whistler-village.jpg"
+             alt="Whistler Village at sunset with illuminated buildings and mountain backdrop." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Whistler Hours of Operation</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Hours vary by season, weather, and special events</li>
+                  <li>Mountain operations adjusted for safety and conditions</li>
+                  <li>Village services available year-round with extended peak season hours</li>
+                  <li>Check current hours before your visit for the most accurate information</li>
+                </ul>
+              </p>
+
+              <h2>Plan Your Day</h2>
+              <p>Operating hours in Whistler change throughout the year to accommodate seasonal activities and visitor needs. Winter sees extended mountain operating hours, while summer focuses on sightseeing and recreational activities. Always check current conditions and hours before heading out, as weather and special events may cause adjustments.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Mountain Operations</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Winter Season (November - April)</h3>
+                        <ul>
+                          <li><b>Lifts Open:</b> 8:00 AM - 3:00 PM (weather permitting)</li>
+                          <li><b>Peak 2 Peak Gondola:</b> 8:30 AM - 2:30 PM</li>
+                          <li><b>Creekside Gondola:</b> 8:00 AM - 3:00 PM</li>
+                          <li><b>Alpine Lifts:</b> May close earlier due to weather</li>
+                          <li><b>Extended Hours:</b> Holiday periods and spring skiing</li>
+                          <li><b>First Tracks:</b> 7:15 AM (select days, ticket required)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Summer Season (May - October)</h3>
+                        <ul>
+                          <li><b>Whistler Village Gondola:</b> 10:00 AM - 5:00 PM</li>
+                          <li><b>Peak 2 Peak Gondola:</b> 10:00 AM - 5:00 PM</li>
+                          <li><b>Bike Park:</b> 10:00 AM - 5:00 PM (July-August)</li>
+                          <li><b>Mountain Top Activities:</b> 10:00 AM - 4:30 PM</li>
+                          <li><b>Hiking Trails:</b> Sunrise to sunset</li>
+                          <li><b>Last Upload:</b> Typically 4:30 PM</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px;"><i>Note: Mountain operations are subject to weather conditions and may change without notice. Check the Whistler Blackcomb app or website for real-time updates.</i></p>
+                </div>
+              </div>
+
+              <h2>Village Services</h2>
+              <p>Whistler Village maintains year-round services with seasonal variations to meet visitor needs:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Shops & Dining</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Retail Shops</h3>
+                        <ul>
+                          <li><b>Regular Hours:</b> 10:00 AM - 6:00 PM</li>
+                          <li><b>Peak Season:</b> 9:00 AM - 9:00 PM</li>
+                          <li><b>Grocery Stores:</b> 8:00 AM - 10:00 PM</li>
+                          <li><b>Ski/Bike Rentals:</b> 8:00 AM - 5:00 PM</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Restaurants</h3>
+                        <ul>
+                          <li><b>Breakfast:</b> 7:00 AM - 11:00 AM</li>
+                          <li><b>Lunch:</b> 11:00 AM - 3:00 PM</li>
+                          <li><b>Dinner:</b> 5:00 PM - 10:00 PM</li>
+                          <li><b>Bars:</b> Until 1:00 AM - 2:00 AM</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Services</h3>
+                        <ul>
+                          <li><b>Visitor Centre:</b> 9:00 AM - 5:00 PM</li>
+                          <li><b>Guest Relations:</b> 8:00 AM - 5:00 PM</li>
+                          <li><b>Lost & Found:</b> 8:00 AM - 4:00 PM</li>
+                          <li><b>Medical Clinic:</b> 8:00 AM - 10:00 PM</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Recreation & Attractions</h2>
+              <p>Whistler's year-round attractions maintain regular schedules with seasonal adjustments:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Audain Art Museum:</b> 10:00 AM - 5:00 PM (closed Tuesdays)</li>
+                <li><b>Squamish Lil'wat Cultural Centre:</b> 9:30 AM - 5:00 PM daily</li>
+                <li><b>Whistler Public Library:</b> Monday-Saturday 10:00 AM - 6:00 PM, Sunday 12:00 PM - 5:00 PM</li>
+                <li><b>Meadow Park Sports Centre:</b> 6:00 AM - 10:00 PM (hours vary by facility)</li>
+                <li><b>Whistler Olympic Plaza:</b> 24 hours (ice skating seasonal)</li>
+                <li><b>Vallea Lumina:</b> 7:00 PM - 10:00 PM (seasonal, May-October)</li>
+              </ul>
+
+              <h2>Transportation</h2>
+              <p>Getting around Whistler is convenient with multiple transportation options:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Transit & Parking</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Free Public Transit</h3>
+                        <ul>
+                          <li><b>Winter (Dec-Apr):</b> 6:00 AM - 3:00 AM</li>
+                          <li><b>Summer (May-Nov):</b> 6:00 AM - 12:00 AM</li>
+                          <li><b>Frequency:</b> 10-20 minutes during peak times</li>
+                          <li><b>Night Service:</b> Extended hours on weekends</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Parking Facilities</h3>
+                        <ul>
+                          <li><b>Village Parkades:</b> 24 hours, 7 days a week</li>
+                          <li><b>Day Lots:</b> 6:00 AM - 12:00 AM</li>
+                          <li><b>Free Lots:</b> 24 hours with shuttle service</li>
+                          <li><b>On-Street:</b> 8:00 AM - 6:00 PM (paid)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Seasonal Variations</h2>
+              <p>Be aware of these seasonal considerations when planning your visit:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Peak Winter (Dec-Mar):</b> Extended hours for most services, highest visitor volume</li>
+                <li><b>Spring Skiing (Apr-May):</b> Reduced mountain hours as season winds down</li>
+                <li><b>Summer High Season (Jul-Aug):</b> All attractions open, longest daylight hours</li>
+                <li><b>Fall Shoulder (Sep-Nov):</b> Some facilities on reduced schedules, many close in October</li>
+                <li><b>Holiday Periods:</b> Extended hours and special events, book services in advance</li>
+              </ul>
+
+              <h2>Check Before You Go</h2>
+              <p>For the most current information:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Download the Whistler Blackcomb app for real-time lift status</li>
+                <li>Visit whistler.com for updated attraction hours</li>
+                <li>Call the visitor information line at 1-800-WHISTLER</li>
+                <li>Follow @Whistler on social media for daily updates</li>
+                <li>Check weather forecasts as conditions affect operating hours</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('hours');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/hours-of-operation/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/hours-of-operation/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

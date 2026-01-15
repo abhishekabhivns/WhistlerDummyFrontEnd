@@ -1,26 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Whistler Test Pages - DMGo Recommendations</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/dmgo-recommendations.js"></script>
-  <script src="assets/js/navigation.js" defer></script>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <style>
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .test-pages-intro {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #00344c 0%, #0d7079 100%);
+      color: white;
+    }
+
+    .test-pages-intro h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .test-pages-intro p {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .test-pages-intro .subtitle {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 1rem;
+    }
+
+    .test-pages-section {
+      padding: 80px 20px;
+      background: #f8f9fa;
+    }
+
+    .test-pages-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 3rem;
+      font-weight: 600;
+    }
+
+    .test-pages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .test-page-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+      border-top: 4px solid #e6e8eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .test-page-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      border-top-color: #0d7079;
+    }
+
+    .test-page-card h3 {
+      color: #00344c;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .test-page-card p {
+      color: #0d7079;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .info-section {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .info-section .inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .info-section h2 {
+      color: #00344c;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .info-section p {
+      color: #5a6c7d;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .info-section ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 2rem auto;
+      color: #5a6c7d;
+      line-height: 1.8;
+    }
+
+    .info-section li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="home-page">
-      <h1>Whistler Test Pages</h1>
-      <p>Testing DMGo-Whistler Recommendation Engine</p>
-      <p style="font-size: 1rem; color: #999;">
-        Click on any page below to see dynamic recommendations served from the API
-      </p>
+    <!-- Intro Section -->
+    <div class="test-pages-intro">
+      <h1>DMGo Test Environment</h1>
+      <p>Whistler.com Recommendation Engine Testing Platform</p>
+      <p class="subtitle">Select any test page below to see dynamic content recommendations</p>
+    </div>
 
+    <!-- Test Pages Grid -->
+    <div class="test-pages-section">
+      <h2>Test Pages</h2>
       <div class="test-pages-grid">
         <a href="activities/helicopter-tours.html" class="test-page-card">
           <h3>Helicopter Tours</h3>
@@ -73,13 +215,37 @@
         </a>
       </div>
     </div>
-  </div>
 
-  <script>
-    // Initialize navigation
-    window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('home');
-    });
-  </script>
+    <!-- Info Section -->
+    <div class="info-section">
+      <div class="inner">
+        <h2>About This Test Environment</h2>
+        <p>
+          This testing platform replicates 10 key pages from Whistler.com to validate the DMGo
+          recommendation engine. Each page dynamically fetches and displays contextually relevant
+          content tiles based on the page's topic and visitor intent.
+        </p>
+        <ul>
+          <li>Pages use Whistler.com's official CSS and design system</li>
+          <li>Recommendations are served via the Python-based DMGo API</li>
+          <li>Tiles are selected using TF-IDF similarity and keyword matching</li>
+          <li>Content is sourced from the DMGo.xlsx tile inventory</li>
+        </ul>
+        <p style="margin-top: 2rem; font-size: 0.875rem; color: #999;">
+          <strong>Note:</strong> This is a test environment for internal use.
+          The recommendation API must be running on localhost:5000 for tiles to load.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

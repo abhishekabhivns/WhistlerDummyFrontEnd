@@ -1,79 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scandinave Spa Whistler - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scandinave Spa Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Scandinave Spa Whistler</h1>
-      <p>Relax and rejuvenate in a stunning natural setting</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>The Art of Relaxation</h2>
-      <p>
-        Nestled in the forest just minutes from Whistler Village, Scandinave Spa Whistler offers
-        a tranquil escape inspired by the ancient Scandinavian tradition of hot and cold bathing.
-        This award-winning spa provides the perfect setting to unwind after an active day on the
-        mountain.
-      </p>
-      <h3>The Hydrotherapy Circuit</h3>
-      <p>
-        Experience the therapeutic benefits of the hot-cold-relax cycle. Begin in one of the hot
-        baths or steam rooms to warm your body and open your pores. Next, invigorate yourself
-        with a cold plunge or shower to stimulate circulation. Finally, rest in a relaxation area
-        to allow your body to normalize. Repeat the cycle 2-3 times for maximum benefit.
-      </p>
-      <h3>Facilities</h3>
-      <p>
-        The spa features multiple hot baths ranging from 39°C to 40°C, including eucalyptus steam
-        baths and a Finnish sauna. Cold pools and Nordic waterfall showers provide the contrast
-        needed for effective hydrotherapy. Peaceful relaxation areas scattered throughout the
-        grounds offer comfortable lounges and hammocks surrounded by towering evergreens.
-      </p>
-      <h3>Massage Treatments</h3>
-      <p>
-        Enhance your spa experience with a professional massage. Choose from Swedish, deep
-        tissue, or hot stone massages performed by certified therapists. Treatments can be booked
-        in addition to your spa entrance.
-      </p>
-      <h3>Visitor Information</h3>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li>Reservations required - book in advance especially during peak season</li>
-        <li>Adults only (19+) facility</li>
-        <li>Silence is observed throughout the spa</li>
-        <li>Bathing suits required</li>
-        <li>Towels and robes provided</li>
-        <li>Allow 2-3 hours for your visit</li>
-      </ul>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/wellness.jpg"
+             alt="Tranquil outdoor hot bath surrounded by towering evergreen trees at Scandinave Spa Whistler." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Scandinave Spa Whistler</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Award-winning spa inspired by ancient Scandinavian traditions</li>
+                  <li>Nestled in pristine forest just minutes from Whistler Village</li>
+                  <li>Therapeutic hot-cold hydrotherapy circuit</li>
+                  <li>Adults-only (19+) tranquil sanctuary</li>
+                </ul>
+              </p>
+
+              <h2>A Sanctuary of Relaxation</h2>
+              <p>Scandinave Spa Whistler offers an authentic Nordic spa experience set in a stunning natural forest environment. Inspired by the ancient Scandinavian tradition of hot and cold bathing, this award-winning wellness retreat provides the perfect escape to unwind, rejuvenate, and restore balance to body and mind.</p>
+
+              <p>Located just 10 minutes north of Whistler Village at the base of Cougar Mountain, the spa seamlessly blends architectural beauty with the surrounding coastal rainforest. Whether you're seeking relief after an active day on the mountains or simply looking to decompress, Scandinave Spa delivers a deeply restorative experience.</p>
+
+              <h2>The Hydrotherapy Experience</h2>
+              <p>At the heart of Scandinave Spa is the therapeutic practice of hydrotherapy - alternating between hot and cold water to stimulate circulation, eliminate toxins, and promote deep relaxation.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">The Three-Step Circuit</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">1. Warm (10-15 minutes)</h3>
+                        <ul>
+                          <li>Begin in hot baths (39-40°C)</li>
+                          <li>Eucalyptus steam bath</li>
+                          <li>Traditional Finnish sauna</li>
+                          <li>Wood-burning stove warmth</li>
+                          <li>Opens pores and relaxes muscles</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">2. Cold (10-15 seconds)</h3>
+                        <ul>
+                          <li>Plunge into cold baths</li>
+                          <li>Nordic waterfall showers</li>
+                          <li>Bracing outdoor experience</li>
+                          <li>Stimulates circulation</li>
+                          <li>Invigorates and energizes</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">3. Relax (15-20 minutes)</h3>
+                        <ul>
+                          <li>Rest in relaxation areas</li>
+                          <li>Hammocks under evergreens</li>
+                          <li>Cozy solarium spaces</li>
+                          <li>Body normalizes temperature</li>
+                          <li>Maximum therapeutic benefit</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px;"><i>Repeat the cycle 2-3 times for optimal results. Allow 2-3 hours for your complete spa experience.</i></p>
+                </div>
+              </div>
+
+              <h2>Spa Facilities</h2>
+              <p>Scandinave Spa features a variety of hot and cold baths, steam rooms, and relaxation areas scattered throughout the serene forest setting:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Hot Baths:</b> Multiple outdoor baths heated to 39-40°C with stunning forest views</li>
+                <li><b>Eucalyptus Steam Bath:</b> Therapeutic steam infused with aromatic eucalyptus</li>
+                <li><b>Finnish Sauna:</b> Traditional dry heat sauna with wood-burning stove</li>
+                <li><b>Cold Plunge Pools:</b> Invigorating cold water pools to stimulate circulation</li>
+                <li><b>Nordic Waterfall:</b> Cascading cold water showers for a refreshing contrast</li>
+                <li><b>Relaxation Areas:</b> Quiet zones with loungers, hammocks, and fireplaces throughout the property</li>
+                <li><b>Solarium:</b> Indoor relaxation space with floor-to-ceiling windows overlooking the forest</li>
+              </ul>
+
+              <h2>Massage Treatments</h2>
+              <p>Enhance your spa experience with professional massage therapy. Certified therapists offer a range of treatments designed to complement the hydrotherapy circuit:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Treatment Options</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Massage Types</h3>
+                        <ul>
+                          <li><b>Swedish Massage:</b> Classic relaxation technique (45/60/90 min)</li>
+                          <li><b>Deep Tissue:</b> Intensive pressure for chronic tension (45/60/90 min)</li>
+                          <li><b>Hot Stone:</b> Heated stones melt away stress (60/90 min)</li>
+                          <li><b>Exfoliation:</b> Body scrub followed by moisturizing treatment</li>
+                          <li><b>Couple's Massage:</b> Side-by-side treatments in private room</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Booking Information</h3>
+                        <ul>
+                          <li>Book massages in addition to spa entrance</li>
+                          <li>Advance reservations highly recommended</li>
+                          <li>Arrive 15 minutes before massage time</li>
+                          <li>Complete hydrotherapy before treatment</li>
+                          <li>Private treatment rooms with forest views</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Visitor Guidelines</h2>
+              <p>To ensure a peaceful experience for all guests, Scandinave Spa maintains important policies:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Adults Only:</b> Must be 19 years or older to enter the spa</li>
+                <li><b>Reservations Required:</b> Book online in advance, especially during peak seasons</li>
+                <li><b>Silence Policy:</b> Quiet is observed throughout the spa to maintain tranquility</li>
+                <li><b>Bathing Suits Required:</b> Appropriate swimwear must be worn at all times</li>
+                <li><b>No Electronics:</b> Cell phones and cameras not permitted in spa areas</li>
+                <li><b>Towels & Robes Provided:</b> Complimentary towels and robes included with admission</li>
+                <li><b>Lockers Available:</b> Secure storage for personal belongings</li>
+              </ul>
+
+              <h2>Admission & Hours</h2>
+              <p>Plan your visit with current admission rates and operating hours:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Rates & Hours</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Admission (Approximate)</h3>
+                        <ul>
+                          <li><b>Weekday:</b> $89-99 per person</li>
+                          <li><b>Weekend:</b> $99-109 per person</li>
+                          <li><b>Evening (after 6pm):</b> Discounted rates</li>
+                          <li><b>Multi-Visit Passes:</b> 5-visit and 10-visit options</li>
+                          <li><b>Gift Certificates:</b> Available online</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Operating Hours</h3>
+                        <ul>
+                          <li><b>Daily:</b> 10:00 AM - 9:00 PM</li>
+                          <li><b>Last Entry:</b> 7:00 PM</li>
+                          <li><b>Holidays:</b> Check website for special hours</li>
+                          <li><b>Recommended Duration:</b> 2-3 hours</li>
+                          <li><b>Reservations:</b> 2-hour time slots</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px;"><i>Rates and hours subject to change. Visit scandinave.com/whistler for current information and to book online.</i></p>
+                </div>
+              </div>
+
+              <h2>What to Bring</h2>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Bathing suit:</b> Required for all guests</li>
+                <li><b>Flip-flops or sandals:</b> For walking between areas (available for rent if needed)</li>
+                <li><b>Hair tie:</b> If you have long hair</li>
+                <li><b>Reusable water bottle:</b> Stay hydrated (water stations throughout spa)</li>
+                <li><b>Book or magazine:</b> For relaxation time (no electronics permitted)</li>
+              </ul>
+
+              <p><b>Provided by the spa:</b> Towels, bathrobe, shampoo/conditioner, body wash, lockers</p>
+
+              <h2>Getting There</h2>
+              <p>Scandinave Spa is located at 8010 Mons Road, approximately 10 minutes north of Whistler Village:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>By Car:</b> Free parking available on-site</li>
+                <li><b>By Transit:</b> Free Whistler transit Route 8 (check schedule)</li>
+                <li><b>By Taxi/Uber:</b> Quick 10-minute ride from village</li>
+                <li><b>Walking:</b> About 30 minutes from village center through scenic trails</li>
+              </ul>
+
+              <h2>Health Benefits</h2>
+              <p>Regular hydrotherapy practice offers numerous wellness benefits:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Improved circulation and cardiovascular health</li>
+                <li>Relief from muscle soreness and joint pain</li>
+                <li>Reduced stress and anxiety</li>
+                <li>Better sleep quality</li>
+                <li>Detoxification through sweating</li>
+                <li>Boosted immune system function</li>
+                <li>Increased mental clarity and focus</li>
+              </ul>
+
+              <h2>Special Occasions</h2>
+              <p>Scandinave Spa makes an ideal destination for special celebrations:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Birthdays:</b> Treat yourself or gift a spa day</li>
+                <li><b>Anniversaries:</b> Romantic couple's experience</li>
+                <li><b>Bachelorette/Bachelor Parties:</b> Group bookings available</li>
+                <li><b>Corporate Events:</b> Team wellness retreats</li>
+                <li><b>Gift Certificates:</b> Perfect gift for any occasion</li>
+              </ul>
+
+              <p>For the ultimate relaxation experience in Whistler, Scandinave Spa offers an authentic Nordic wellness tradition that will leave you feeling refreshed, rejuvenated, and deeply restored.</p>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('spa');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/wellness/scandinave-spa/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/wellness/scandinave-spa/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>
