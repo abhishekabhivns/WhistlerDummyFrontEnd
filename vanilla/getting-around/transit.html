@@ -1,71 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Public Transit - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Public Transit in Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Public Transit</h1>
-      <p>Free and convenient transit throughout Whistler</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Getting Around is Easy</h2>
-      <p>
-        Whistler's public transit system is completely FREE and provides convenient access to all
-        major areas of the resort. With regular service throughout the day and evening, you can
-        easily get around without a car.
-      </p>
-      <h3>Route Information</h3>
-      <p>
-        Multiple bus routes serve Whistler Village, the Upper Village, Creekside, and
-        surrounding neighborhoods. During peak winter season, service runs frequently from early
-        morning until late evening. In summer, schedules are adjusted for typical vacation
-        patterns.
-      </p>
-      <h3>How to Use the System</h3>
-      <p>
-        Simply board at any marked bus stop throughout Whistler. No tickets or passes required -
-        all transit is free! Buses are equipped with bike racks in summer and ski racks in
-        winter. Real-time arrival information is available at major stops and through mobile
-        apps.
-      </p>
-      <h3>Key Routes</h3>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li><strong>Route 1:</strong> Village to Upper Village via Blackcomb Way</li>
-        <li><strong>Route 2:</strong> Village to Function Junction</li>
-        <li><strong>Route 3:</strong> Village to Emerald Estates</li>
-        <li><strong>Route 5:</strong> Village to Creekside</li>
-        <li><strong>Route 7:</strong> Village to Nordic Estates</li>
-      </ul>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/transportation.jpg"
+             alt="Free public transit buses connect all areas of Whistler and surrounding communities." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Getting Around Whistler by Transit</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>FREE public transit throughout Whistler Valley</li>
+                  <li>Convenient service connecting villages, neighborhoods, and day lots</li>
+                  <li>Year-round service with extended hours during peak seasons</li>
+                  <li>Accessible buses with bike racks and ski storage</li>
+                </ul>
+              </p>
+
+              <h2>Whistler Transit System</h2>
+              <p>Whistler's public transit system provides free transportation throughout the valley, making it easy and convenient to get around without a car. The fleet of modern, accessible buses connects all major areas including Whistler Village, Creekside, Function Junction, Emerald Estates, and surrounding neighborhoods.</p>
+
+              <p>During winter, buses are equipped with ski and snowboard racks. In summer, bike racks are available on all buses, making it easy to explore Whistler's extensive trail network.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Main Routes</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Route 1 - Village</h3>
+                        <ul>
+                          <li>Connects Whistler Village to Creekside</li>
+                          <li>Stops at major hotels and accommodations</li>
+                          <li>Frequent service every 10-20 minutes</li>
+                          <li>Operates from early morning to late evening</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Route 2 - Neighborhoods</h3>
+                        <ul>
+                          <li>Services residential areas</li>
+                          <li>Connects to day parking lots</li>
+                          <li>Service every 20-30 minutes</li>
+                          <li>Links Emerald, Alpine, and Nordic areas</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Route 3 - Valley Express</h3>
+                        <ul>
+                          <li>Rapid service along main corridor</li>
+                          <li>Links Function Junction to Village</li>
+                          <li>Limited stops for faster travel</li>
+                          <li>Peak hours service</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Service Hours</h2>
+              <p>Transit service operates year-round with extended hours during peak winter and summer seasons.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Operating Hours</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Winter Season (December - April)</h3>
+                        <ul>
+                          <li><b>Weekdays:</b> 6:00 AM - 2:00 AM</li>
+                          <li><b>Weekends:</b> 6:00 AM - 3:00 AM</li>
+                          <li><b>Holidays:</b> Extended late-night service</li>
+                          <li>Increased frequency during peak ski hours</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Summer Season (May - November)</h3>
+                        <ul>
+                          <li><b>Daily:</b> 6:00 AM - 12:00 AM</li>
+                          <li>Reduced frequency in shoulder seasons</li>
+                          <li>Special event service for festivals</li>
+                          <li>Bike rack availability on all buses</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Regional Connections</h2>
+              <p>BC Transit also operates regional routes connecting Whistler to surrounding communities:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Route 99:</b> Connects Whistler to Pemberton (45 minutes)</li>
+                <li><b>Squamish Connector:</b> Limited service to Squamish (1 hour)</li>
+                <li><b>Vancouver Airport:</b> Private coach services available (multiple departures daily)</li>
+              </ul>
+
+              <h2>Tips for Using Transit</h2>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Plan ahead:</b> Check real-time schedules and route maps at bus stops or online</li>
+                <li><b>Signal the driver:</b> Wave at approaching buses to indicate you want to board</li>
+                <li><b>Ski/bike racks:</b> Load your own equipment; drivers will assist if needed</li>
+                <li><b>Pets:</b> Small pets in carriers are welcome; service animals always permitted</li>
+                <li><b>Exact change:</b> While service is free in Whistler, regional routes may require payment</li>
+                <li><b>Download the app:</b> Real-time tracking available for all routes</li>
+              </ul>
+
+              <h2>Accessibility</h2>
+              <p>All Whistler transit buses are wheelchair accessible with low-floor entry and designated seating areas. Priority seating is available near the front of each bus. Service animals are always welcome, and drivers are trained to provide assistance to passengers with disabilities.</p>
+
+              <h2>Why Choose Transit?</h2>
+              <p>Using public transit in Whistler offers many benefits:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Completely free within Whistler Valley</li>
+                <li>Avoid parking hassles and fees</li>
+                <li>No need to worry about après-ski drinks and driving</li>
+                <li>Environmentally friendly alternative to driving</li>
+                <li>Relax and enjoy the scenery</li>
+                <li>Convenient connections to all major areas</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('transit');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/getting-around/transit/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/getting-around/transit/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

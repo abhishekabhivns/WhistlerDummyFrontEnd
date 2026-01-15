@@ -1,61 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vallea Lumina - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vallea Lumina - Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Vallea Lumina</h1>
-      <p>An enchanting multimedia night walk through the forest</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>A Magical Journey Awaits</h2>
-      <p>
-        Vallea Lumina is an enchanting multimedia experience set in a spectacular outdoor setting
-        in Cougar Mountain at the base of Whistler Blackcomb. This unique attraction combines
-        video projections, lighting, and music to create an immersive storytelling experience as
-        you walk through the forest.
-      </p>
-      <p>
-        Follow the story of two travelers searching for hidden wonders in a valley that comes
-        alive at night. The 1.5 km trail takes approximately 50 minutes to complete and is
-        suitable for all ages. The experience operates in both summer and winter seasons, with
-        each offering its own magical atmosphere.
-      </p>
-      <p>
-        Advanced reservations are highly recommended as tours often sell out. The trail is
-        relatively easy but does include some uneven terrain. Dress warmly in winter and bring a
-        light jacket even in summer as temperatures drop in the evening.
-      </p>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/vallea-lumina.jpg"
+             alt="Vallea Lumina is an enchanting multimedia night walk through an old-growth forest in Whistler." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Vallea Lumina</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>An enchanted night walk illuminated by magical projections, lighting and soundscapes</li>
+                  <li>Journey through old-growth forests along a 1.5 km trail</li>
+                  <li>Family-friendly experience suitable for all ages</li>
+                  <li>Open seasonally from late spring through fall</li>
+                </ul>
+              </p>
+
+              <h2>The Experience</h2>
+              <p>Vallea Lumina is an enchanting multimedia experience set in an old-growth forest at the base of Cougar Mountain, just minutes from Whistler Village. This unique night walk tells the story of two travelers who discover a hidden valley filled with wondrous spirits.</p>
+
+              <p>As you walk the 1.5 km trail, you'll be immersed in a world of light, video projections, and soundscapes that bring the forest to life. The experience takes approximately 50 minutes and is accessible for all ages and fitness levels.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Ticket Information</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Duration</h3>
+                        <ul>
+                          <li><b>50 minutes</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Distance</h3>
+                        <ul>
+                          <li><b>1.5 km trail</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Pricing</h3>
+                        <ul>
+                          <li>Adults: <b>$29.95</b></li>
+                          <li>Youth (6-15): <b>$19.95</b></li>
+                          <li>Children under 6: <b>Free</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>What to Bring</h2>
+              <p>The experience takes place outdoors rain or shine. We recommend bringing:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li>Comfortable walking shoes</li>
+                <li>Weather-appropriate clothing (layers recommended)</li>
+                <li>Light rain jacket if weather calls for it</li>
+              </ul>
+
+              <h2>Getting There</h2>
+              <p>Vallea Lumina is located at the base of Cougar Mountain, approximately 10 minutes north of Whistler Village. Free parking is available on-site. Shuttle services from the village are also available during peak season.</p>
+
+              <h2>Accessibility</h2>
+              <p>The trail is mostly flat and well-maintained, making it accessible for strollers and wheelchairs. However, there are some natural terrain variations. Please contact us in advance if you have specific accessibility requirements.</p>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('vallea');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/activities/vallea-lumina/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/activities/vallea-lumina/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

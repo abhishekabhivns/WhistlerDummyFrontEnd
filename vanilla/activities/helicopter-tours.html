@@ -1,62 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helicopter Tours - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whistler Helicopter Tours | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Helicopter Tours</h1>
-      <p>Experience Whistler from above with breathtaking helicopter tours</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Soar Above the Mountains</h2>
-      <p>
-        Take in the spectacular views of Whistler, Blackcomb, and the surrounding Coast Mountains
-        on an unforgettable helicopter tour. Whether you're looking for a scenic flight, glacier
-        landing, or adventure tour, there's a helicopter experience perfect for you.
-      </p>
-      <p>
-        Our helicopter tour operators offer a variety of experiences, from short 12-minute scenic
-        flights to extended tours that include glacier landings and alpine picnics. All tours are
-        led by experienced pilots who provide insightful commentary about the region's geography,
-        wildlife, and history.
-      </p>
-      <p>
-        Tours operate year-round, weather permitting. During winter months, you can witness
-        snow-capped peaks and pristine glaciers. Summer tours showcase vibrant alpine meadows and
-        stunning turquoise lakes. Each season offers its own unique perspective on this
-        magnificent landscape.
-      </p>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/helicopter-excursions.jpg"
+             alt="Helicopter excursions in Whistler let you explore the Coast Mountains, ice-caves, ancient glaciers, hidden lakes and valleys." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Whistler Helicopter Excursions</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Fly deep into the pristine and rugged landscape of the Coast Mountains</li>
+                  <li>Fly over knife-sharp peaks, ancient glaciers, hidden lakes and valleys and stunning ice formations</li>
+                  <li>Choose from scenic flights to more adventurous journeys like heli-biking or ice cave explorations</li>
+                  <li>Helicopter tours run year-round and are weather dependent</li>
+                </ul>
+              </p>
+
+              <h2>Whistler Scenic Tours</h2>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Blackcomb Helicopters: Whistler Explorer Tour</h3>
+                <div class="show-hide__content">
+                  <p>In this stunning 15 minute tour, discover Whistler's surrounding gems. Fly over the Whistler Blackcomb resort, get a birds-eye view of Whistler Village, or observe the stunning Wedge Glacier and Wedge Mountain.</p>
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Helicopter Model</h3>
+                        <ul>
+                          <li><b>Astar</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Duration</h3>
+                        <ul>
+                          <li><b>15 minutes</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Price</h3>
+                        <ul>
+                          <li>Private Tour: <b>$999</b> (up to 5 people)</li>
+                          <li>Public Tour: <b>$215</b> per seat</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Blackcomb Helicopters: Coast Mountain Adventure</h3>
+                <div class="show-hide__content">
+                  <p>Celebrate life's unforgettable moments from a breathtaking new perspective. Whether you're planning a proposal, birthday surprise, or unique team-building experience, this helicopter package includes a 25-minute scenic flight and a 20-minute landing at a secluded alpine location. Soar high above Whistler and take in panoramic views that are truly second to none.</p>
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Helicopter Model</h3>
+                        <ul>
+                          <li><b>Astar</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Duration</h3>
+                        <ul>
+                          <li><b>45 minutes</b></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Price</h3>
+                        <ul>
+                          <li>Private Tour: <b>$1,599</b> (up to 5 people)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Heli-Biking</h2>
+              <p>Experience the thrill of mountain biking combined with the excitement of helicopter flight. Take a helicopter to pristine alpine trails and ride through spectacular mountain terrain accessible only by air.</p>
+
+              <h2>Reviews</h2>
+              <p>Don't just take our word for it - hear what our guests have to say about their unforgettable helicopter experiences in Whistler!</p>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
-    // Initialize navigation and load recommendations
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('helicopter');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/activities/helicopter-tours/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/activities/helicopter-tours/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

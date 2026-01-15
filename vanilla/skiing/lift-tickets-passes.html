@@ -1,75 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lift Tickets & Passes - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lift Tickets & Passes | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Lift Tickets & Passes</h1>
-      <p>Get on the mountain with the right ticket or pass</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Choose Your Pass</h2>
-      <p>
-        Whistler Blackcomb offers a variety of lift ticket options to suit every skier and
-        snowboarder. From single-day tickets to season passes, we have flexible options for
-        locals, visitors, and frequent riders.
-      </p>
-      <h3>Single & Multi-Day Tickets</h3>
-      <p>
-        Perfect for visitors planning a shorter stay. Multi-day tickets offer better value than
-        purchasing daily tickets separately. Tickets are valid for consecutive days and provide
-        full access to both Whistler and Blackcomb mountains, including the PEAK 2 PEAK Gondola.
-      </p>
-      <h3>Epic Pass</h3>
-      <p>
-        The Epic Pass provides unlimited access to Whistler Blackcomb plus 35+ other resorts
-        worldwide. It's the best value for those planning multiple trips or a full season of
-        skiing. Purchase early for the best rates - prices increase as the season approaches.
-      </p>
-      <h3>Edge Card</h3>
-      <p>
-        Designed for British Columbia residents, the Edge Card offers discounted rates and
-        flexible options. Choose from unlimited passes, 10-day cards, or discounted single-day
-        tickets.
-      </p>
-      <h3>Tips for Purchasing</h3>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li>Buy online in advance to save time and sometimes money</li>
-        <li>Consider your total days on the mountain when choosing a pass</li>
-        <li>Kids 12 and under ski free with a paying adult (conditions apply)</li>
-        <li>Season pass holders get additional benefits including priority lift lines</li>
-        <li>Upload your photo online before arriving to skip the ticket window</li>
-      </ul>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/skiing-whistler-blackcomb.jpg"
+             alt="Skiers and snowboarders enjoying perfect conditions on Whistler Blackcomb's legendary terrain." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Whistler Blackcomb Lift Tickets & Passes</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Flexible ticket options for every type of skier and snowboarder</li>
+                  <li>Access to over 8,000 acres across two epic mountains</li>
+                  <li>Includes Peak 2 Peak Gondola and all lifts</li>
+                  <li>Best rates when purchased online in advance</li>
+                </ul>
+              </p>
+
+              <h2>Find Your Perfect Pass</h2>
+              <p>Whether you're visiting for a day or planning an entire season of skiing, Whistler Blackcomb offers ticket options to match your plans. From single-day lift tickets to the globally recognized Epic Pass, we have flexible solutions for locals, frequent visitors, and first-time guests alike.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Ticket & Pass Options</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Single & Multi-Day</h3>
+                        <ul>
+                          <li><b>1-Day Ticket:</b> Perfect for day trips</li>
+                          <li><b>3-Day Ticket:</b> Save vs. buying daily</li>
+                          <li><b>5-Day Ticket:</b> Best weekly value</li>
+                          <li><b>7-Day Ticket:</b> Ultimate flexibility</li>
+                          <li>Valid consecutive days only</li>
+                          <li>Full mountain access included</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Epic Pass</h3>
+                        <ul>
+                          <li><b>Unlimited access</b> to Whistler Blackcomb</li>
+                          <li>Access to 35+ resorts worldwide</li>
+                          <li>Best value for season-long skiing</li>
+                          <li>Early purchase discounts available</li>
+                          <li>Additional perks and benefits</li>
+                          <li>Various Epic Pass tiers available</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Edge Card (BC Residents)</h3>
+                        <ul>
+                          <li><b>Unlimited:</b> Full season access</li>
+                          <li><b>10-Day:</b> Flex days throughout season</li>
+                          <li><b>Discounted singles:</b> Lower daily rates</li>
+                          <li>Proof of BC residency required</li>
+                          <li>Best value for BC locals</li>
+                          <li>Add-ons and upgrades available</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Pricing Guide</h2>
+              <p>Lift ticket prices vary by season, date purchased, and advance booking. Generally, tickets purchased online in advance offer significant savings compared to window prices.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Typical Pricing (Subject to Change)</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Adult Tickets (19-64)</h3>
+                        <ul>
+                          <li><b>1-Day:</b> $189-239 (peak vs. value days)</li>
+                          <li><b>3-Day:</b> $549 ($183/day average)</li>
+                          <li><b>5-Day:</b> $869 ($174/day average)</li>
+                          <li><b>7-Day:</b> $1,149 ($164/day average)</li>
+                          <li><i>Online advance purchase recommended</i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Youth & Seniors</h3>
+                        <ul>
+                          <li><b>Youth (13-18):</b> 25% discount</li>
+                          <li><b>Senior (65+):</b> 25% discount</li>
+                          <li><b>Child (7-12):</b> 40% discount</li>
+                          <li><b>Under 7:</b> Free with adult ticket</li>
+                          <li><b>Kids Ski Free:</b> Special promotions apply</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px;"><i>Prices are approximate and change based on demand, season, and booking date. Always check whistlerblackcomb.com for current pricing.</i></p>
+                </div>
+              </div>
+
+              <h2>The Epic Pass Family</h2>
+              <p>The Epic Pass opens up a world of skiing beyond Whistler Blackcomb. Choose from several tiers based on your skiing frequency and destination preferences:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Epic Pass:</b> Unlimited skiing at all Vail Resorts properties including Whistler Blackcomb, plus partner resorts worldwide</li>
+                <li><b>Epic Local Pass:</b> Unlimited with holiday restrictions; best for flexible skiers</li>
+                <li><b>Epic Day Pass:</b> 1-7 days anywhere; choose your adventure days</li>
+                <li><b>Military Epic Pass:</b> Exclusive discounts for active and retired military</li>
+              </ul>
+
+              <p>Early season purchase (spring/summer) offers the best pricing. Passes typically go on sale in March with tiered pricing through fall.</p>
+
+              <h2>Pass Benefits & Perks</h2>
+              <p>Season pass holders enjoy exclusive benefits beyond lift access:</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Additional Benefits</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Mountain Perks</h3>
+                        <ul>
+                          <li>Priority lift line access</li>
+                          <li>First tracks early mountain access</li>
+                          <li>Discounts on lessons</li>
+                          <li>Equipment rental discounts</li>
+                          <li>Buddy tickets for friends</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Village Savings</h3>
+                        <ul>
+                          <li>Retail shop discounts</li>
+                          <li>Restaurant specials</li>
+                          <li>Spa and wellness deals</li>
+                          <li>Accommodations packages</li>
+                          <li>Summer activity discounts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Exclusive Access</h3>
+                        <ul>
+                          <li>Pass holder events</li>
+                          <li>Product demos and sales</li>
+                          <li>Member-only contests</li>
+                          <li>Early season opening access</li>
+                          <li>Spring skiing extensions</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Purchasing Tips</h2>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Buy online:</b> Save time and often money compared to window prices</li>
+                <li><b>Upload your photo:</b> Skip the ticket office by uploading your photo to your account in advance</li>
+                <li><b>Mobile tickets:</b> Download the app and access tickets directly from your phone</li>
+                <li><b>Calculate your days:</b> If skiing 7+ days, consider a season pass for better value</li>
+                <li><b>Check for deals:</b> Early season promotions, group rates, and packages save money</li>
+                <li><b>Kids ski free:</b> One child 12 and under skis free with each adult ticket purchase (select dates)</li>
+                <li><b>Spring skiing:</b> Late season offers best value and excellent conditions</li>
+              </ul>
+
+              <h2>Refunds & Insurance</h2>
+              <p>Lift tickets are generally non-refundable, but you have options for protection:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Ticket insurance:</b> Available at purchase to protect against illness, injury, or travel disruption</li>
+                <li><b>Pass insurance:</b> Epic Coverage protects your season pass investment</li>
+                <li><b>Weather closures:</b> If lifts don't operate due to weather, refunds or credits may be issued</li>
+                <li><b>Unused days:</b> Multi-day tickets can sometimes be applied to future purchases (restrictions apply)</li>
+              </ul>
+
+              <h2>Special Programs</h2>
+              <p>Whistler Blackcomb offers specialized programs for various groups:</p>
+
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>School & Group Programs:</b> Discounted rates for organized groups and school trips</li>
+                <li><b>Corporate Passes:</b> Business programs for employee benefits and team building</li>
+                <li><b>Learn to Ski/Ride Packages:</b> Beginner packages including lesson, rentals, and lift access</li>
+                <li><b>Adaptive Programs:</b> Specialized access and support for adaptive skiers</li>
+              </ul>
+
+              <h2>Getting Started</h2>
+              <p>Ready to hit the slopes? Here's what to do:</p>
+
+              <ol style="list-style-position: outside; margin: 0 20px 20px; line-height: 2;">
+                <li>Visit whistlerblackcomb.com to view current ticket options and pricing</li>
+                <li>Create an account or log in to your existing Epic account</li>
+                <li>Select your ticket or pass option and complete purchase</li>
+                <li>Upload your photo to skip ticket window lines</li>
+                <li>Download the Whistler Blackcomb app for mobile ticket access</li>
+                <li>Arrive at the mountain and scan your pass at any lift</li>
+              </ol>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('lift-tickets');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/skiing/lift-tickets/passes/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/skiing/lift-tickets/passes/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>

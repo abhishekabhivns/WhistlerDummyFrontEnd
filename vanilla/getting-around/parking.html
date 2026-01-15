@@ -1,70 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parking in Whistler - Whistler Test Pages</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parking in Whistler | Tourism Whistler</title>
+
+  <!-- Whistler.com Official CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdn.whistler.com/css/main.2025.10.22b.css" />
+
+  <!-- DMGo Recommendations -->
   <script src="../assets/js/dmgo-recommendations.js"></script>
-  <script src="../assets/js/navigation.js" defer></script>
+
+  <style>
+    /* Override container width to prevent excessive stretching */
+    .content__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Ensure proper spacing for recommendation section */
+    .recommendations-wrapper {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .recommendations-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #00344c;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navigation"></nav>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="page-header">
-      <h1>Parking in Whistler</h1>
-      <p>Find convenient parking options throughout the village</p>
+  <div id="js-wrapper">
+    <!-- Hero Header -->
+    <div id="hero_header_wrapper">
+      <div id="hero_header">
+        <a href="../index.html" class="logo">Tourism Whistler</a>
+        <ul class="nav--icon">
+          <li class="nav-show">
+            <input type="text" id="keywords" name="keywords" placeholder="Search" />
+            <a class="site-search icon icon--search"></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content content-wide">
-      <h2>Where to Park</h2>
-      <p>
-        Whistler Village offers several convenient parking options, including day parking lots,
-        parkades, and on-street parking. During peak seasons, parking can be limited, so we
-        recommend arriving early or using alternative transportation when possible.
-      </p>
-      <h3>Parking Lots and Parkades</h3>
-      <p>
-        Several parkades are located throughout the village with easy access to shops,
-        restaurants, and the ski lifts. Day lots offer more affordable rates and are ideal for
-        longer visits. Most parking facilities accept credit cards and have attendants during
-        peak hours.
-      </p>
-      <h3>Rates and Payment</h3>
-      <p>
-        Parking rates vary by location and season. During winter, rates are typically higher due
-        to increased demand. Many lots offer early bird specials if you arrive before 8 AM. Free
-        parking is available in designated day lots outside the village core with free shuttle
-        service to the village.
-      </p>
-      <h3>Tips for Parking</h3>
-      <ul style="margin-left: 2rem; line-height: 2;">
-        <li>Consider using the free public transit system</li>
-        <li>Book overnight parking in advance during peak season</li>
-        <li>Download parking apps for real-time availability</li>
-        <li>Carpool when possible to reduce congestion</li>
-      </ul>
+    <div class="content__wrapper">
+      <!-- Hero Section -->
+      <div class="hero">
+        <img class="cld-responsive"
+             src="https://res.cloudinary.com/whistler/image/upload/w_auto,c_scale,dpr_auto,q_auto/v1/s3/images/header/transportation.jpg"
+             alt="Convenient parking options throughout Whistler Village and surrounding areas." />
+      </div>
+
+      <!-- Main Content -->
+      <div class="main" role="main">
+        <div class="inner">
+          <section class="content content--split">
+            <article class="article" role="article">
+              <h1>Parking in Whistler</h1>
+
+              <p>
+                <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                  <li>Multiple parkades and day lots throughout the village</li>
+                  <li>Free parking available in designated day lots with shuttle service</li>
+                  <li>On-street parking in select areas</li>
+                  <li>Overnight parking options for visitors staying in the village</li>
+                </ul>
+              </p>
+
+              <h2>Village Parkades</h2>
+              <p>Whistler Village features several multi-level parkades conveniently located near shops, restaurants, and ski lifts. These climate-controlled facilities offer covered parking and are ideal for both day visitors and overnight guests.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Main Parkades</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Village Gate Parkade</h3>
+                        <ul>
+                          <li>600+ spaces</li>
+                          <li>Direct access to Village Stroll</li>
+                          <li>Credit card payment</li>
+                          <li>EV charging stations available</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Conference Centre Parkade</h3>
+                        <ul>
+                          <li>500+ spaces</li>
+                          <li>Adjacent to Whistler Conference Centre</li>
+                          <li>Close to Blackcomb base</li>
+                          <li>Accessible parking available</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Marketplace Parkade</h3>
+                        <ul>
+                          <li>400+ spaces</li>
+                          <li>Convenient for shopping and dining</li>
+                          <li>Short-term and long-term rates</li>
+                          <li>24/7 access</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Day Lots and Free Parking</h2>
+              <p>For budget-conscious visitors, Whistler offers several free parking options in designated day lots. These lots are located a short distance from the village core, with complimentary shuttle service running regularly throughout the day.</p>
+
+              <p>Popular free parking locations include:</p>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Day Lot 4 & 5:</b> Largest free lots, frequent shuttle service to village</li>
+                <li><b>Creekside:</b> Free parking near Creekside Gondola</li>
+                <li><b>Function Junction:</b> Industrial area with free parking and transit access</li>
+              </ul>
+
+              <h2>Parking Rates</h2>
+              <p>Parking rates vary by location, season, and duration. During peak winter and summer seasons, rates are typically higher due to increased demand.</p>
+
+              <div class="show-hide">
+                <h3 class="show-hide__title">Typical Rates (Subject to Change)</h3>
+                <div class="show-hide__content">
+                  <div class="row">
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Day Parking (Parkades)</h3>
+                        <ul>
+                          <li>First hour: $5</li>
+                          <li>2-4 hours: $3 per hour</li>
+                          <li>4-8 hours: $25 flat rate</li>
+                          <li>8+ hours: $35 flat rate</li>
+                          <li><b>Early bird special:</b> $20 (arrive before 8 AM)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="half">
+                      <div class="tile tile--plain">
+                        <h3 class="tile__title">Overnight Parking</h3>
+                        <ul>
+                          <li>24-hour rate: $45</li>
+                          <li>Weekly rate: $250</li>
+                          <li>Monthly rate: $800</li>
+                          <li>Reservations recommended during peak season</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px;"><i>Note: Free parking available in designated day lots. Rates shown are for village parkades and subject to change.</i></p>
+                </div>
+              </div>
+
+              <h2>Tips for Parking in Whistler</h2>
+              <ul style="list-style-position: outside; margin: 0 20px 20px;">
+                <li><b>Arrive early:</b> Parking fills up quickly during peak times, especially on powder days and holidays</li>
+                <li><b>Use transit:</b> Consider the free public transit system to avoid parking hassles</li>
+                <li><b>Book ahead:</b> Reserve overnight parking in advance during busy periods</li>
+                <li><b>Download apps:</b> Use parking apps for real-time availability and mobile payment</li>
+                <li><b>Carpool:</b> Share rides to reduce congestion and save on parking costs</li>
+                <li><b>EV charging:</b> Several parkades offer electric vehicle charging stations</li>
+              </ul>
+
+              <h2>Parking Regulations</h2>
+              <p>Please observe all posted parking signs and time limits. Whistler enforces parking regulations year-round, and violations may result in tickets or towing. Do not park in fire lanes, loading zones, or residential areas without permits.</p>
+
+              <p>During winter months, overnight parking restrictions are in effect on many village streets to allow for snow clearing operations.</p>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
 
-    <div class="recommendations-section">
-      <div class="content content-wide">
+    <!-- Recommendations Section -->
+    <div class="recommendations-wrapper">
+      <div class="inner">
+        <h2 class="recommendations-title">You May Also Like</h2>
         <div id="recommendations-container"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p style="text-align: center; padding: 40px 20px; color: #666;">
+          © 2026 Tourism Whistler Test Environment - DMGo Recommendation Engine
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script>
+    // Load DMGo recommendations
     window.addEventListener('DOMContentLoaded', function() {
-      initNavigation('parking');
-
-      loadRecommendations({
-        pageUrl: 'https://www.whistler.com/getting-around/parking/',
-        containerId: 'recommendations-container',
-        numTiles: 3
-      });
+      if (typeof loadRecommendations === 'function') {
+        loadRecommendations({
+          pageUrl: 'https://www.whistler.com/getting-around/parking/',
+          containerId: 'recommendations-container',
+          numTiles: 3
+        });
+      }
     });
   </script>
 </body>
